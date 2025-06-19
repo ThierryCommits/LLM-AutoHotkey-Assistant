@@ -146,8 +146,23 @@ class InputWindow {
         return true
     }
 
-    sendButtonAction(functionToCall) {
-        this.SendButton.OnEvent("Click", functionToCall.Bind(this))
+    registerSendButtonAction(functionToCall) {
+
+        boundFunc := functionToCall.Bind(this)
+
+        ; Sur le click, appeler la fonction passée en paramètre
+        this.SendButton.OnEvent("Click", boundFunc)
+
+        try {
+            ; Limiter le raccourci clavier défini juste après, à la fenêtre qui l'a défini
+            HotIfWinActive "ahk_id " this.guiObj.Hwnd
+
+            ; Associer le raccourci clavier CTRL+Enter au clic sur le GuiControl
+            Hotkey "^Enter", boundFunc
+
+        } catch as e {
+            MsgBox "Error setting hotkey: " e.Message
+        }
     }
 
     closeButtonAction(*) {

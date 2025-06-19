@@ -219,7 +219,7 @@ showResponseWindow(responseWindowTextContent, initialRequest, noActivate := fals
 
 chatInputWindow := InputWindow("Send message to " requestParams["responseWindowTitle"], requestParams[
     "skipConfirmation"])
-chatInputWindow.sendButtonAction(chatSendButtonAction)
+chatInputWindow.registerSendButtonAction(chatSendButtonAction)
 
 chatSendButtonAction(*) {
     if !chatInputWindow.validateInputAndHide() {

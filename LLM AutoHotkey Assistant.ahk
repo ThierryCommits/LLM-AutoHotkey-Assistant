@@ -186,9 +186,9 @@ sendToPromptNameInputWindow := InputWindow("Send message to prompt")
 ; Register sendButtonActions
 ; ----------------------------------------------------
 
-customPromptInputWindow.sendButtonAction(customPromptSendButtonAction)
-sendToAllModelsInputWindow.sendButtonAction(sendToAllModelsSendButtonAction)
-sendToPromptNameInputWindow.sendButtonAction(sendToGroupSendButtonAction)
+customPromptInputWindow.registerSendButtonAction(customPromptSendButtonAction)
+sendToAllModelsInputWindow.registerSendButtonAction(sendToAllModelsSendButtonAction)
+sendToPromptNameInputWindow.registerSendButtonAction(sendToGroupSendButtonAction)
 
 ; ----------------------------------------------------
 ; Input Window actions
