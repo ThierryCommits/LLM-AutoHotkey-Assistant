@@ -5,7 +5,7 @@
   <style> ... </style> tags must be commented before push on GITHUB,
   because GITHUB refuse to handle them for security reasons.
   See https://github.com/github/markup#github-markup
--- >
+-->
 
 <!--
 <style>
