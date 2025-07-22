@@ -1,3 +1,12 @@
+<!-- 
+  To générate README.pdf with VSCode + Markdown PDF extension, 
+  remove comments Around <style> ... </style> tags.
+
+  <style> ... </style> tags must be commented before push on GITHUB,
+  because GITHUB refuse to handle them for security reasons.
+  See https://github.com/github/markup#github-markup
+-- >
+
 <!--
 <style>
 
