@@ -1,3 +1,13 @@
+<!-- 
+  To générate README.pdf with VSCode + Markdown PDF extension, 
+  remove comments Around <style> ... </style> tags.
+
+  <style> ... </style> tags must be commented before push on GITHUB,
+  because GITHUB refuse to handle them for security reasons.
+  See https://github.com/github/markup#github-markup
+-- >
+
+<!--
 <style>
 
 body {
@@ -73,6 +83,9 @@ p.highlighted {
 }
 
 </style>
+-->
+
+<div align="center">
 
 ![bot](https://github.com/user-attachments/assets/fd5e1d8c-d19f-44f1-b590-2cc950ede6b9)
 
@@ -98,6 +111,7 @@ LLM AutoHotkey Assistant is an AutoHotkey v2 application that usually utilizes <
 
 ![Total downloads](https://img.shields.io/github/downloads/kdalanon/LLM-AutoHotkey-Assistant/total?style=for-the-badge&color=blue&label=Total%20Downloads)
 
+</div>
 
 > [!TIP] 
 > Want to ask questions on how to use this app? [Download this documentation](https://github.com/kdalanon/LLM-AutoHotkey-Assistant/raw/refs/heads/main/README.md) and include it in your prompt when using your preferred AI chat app!
