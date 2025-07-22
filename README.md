@@ -1,3 +1,4 @@
+<!--
 <style>
 
 body {
@@ -73,6 +74,7 @@ p.highlighted {
 }
 
 </style>
+-->
 
 ![bot](https://github.com/user-attachments/assets/fd5e1d8c-d19f-44f1-b590-2cc950ede6b9)
 
