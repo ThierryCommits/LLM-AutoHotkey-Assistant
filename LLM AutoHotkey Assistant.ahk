@@ -349,12 +349,13 @@ addToPromptMenu(promptMenu, prompt, index) {
 
 hasAllNeededForMenu(prompt) {
 
+    ; Check if all needed properties are present and not
     hasPromptName := prompt.HasProp("promptName") && prompt.promptName && prompt.promptName != ""
     hasMenuText := prompt.HasProp("menuText") && prompt.menuText && prompt.menuText != ""
     hasSystemPrompt := prompt.HasProp("systemPrompt") && prompt.systemPrompt && prompt.systemPrompt != ""
     hasAPIModels := prompt.HasProp("APIModels") && prompt.APIModels && prompt.APIModels != ""
 
-    hasAllNeeded := hasPromptName and hasMenuText and hasSystemPrompt and hasAPIModels
+    hasAllNeeded := hasPromptName && hasMenuText && hasSystemPrompt && hasAPIModels
 
     return hasAllNeeded
 }
