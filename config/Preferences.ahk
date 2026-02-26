@@ -9,6 +9,7 @@
 ; ----------------------------------------------------
 
 ; If not defined, OpenRouter API endpoint will be used
+; gLLM_BASE_URL := "http://localhost:1234"
 ; gLLM_BASE_URL := "http://xxx.fr:yyyy"
 
 ; ----------------------------------------------------
