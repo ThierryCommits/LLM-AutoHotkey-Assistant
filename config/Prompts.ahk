@@ -2,6 +2,11 @@
 ; Custom Shortcut
 ; ----------------------------------------------------
 
+; ! = Alt
+; + = Shift
+; # = Win
+; ^ = Ctrl
+
 !+o:: mainScriptHotkeyActions("showPromptMenu")
 
 #SuspendExempt
