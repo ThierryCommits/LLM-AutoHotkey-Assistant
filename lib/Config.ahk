@@ -328,6 +328,9 @@ class InputWindow {
             ; Put Edit value in Clipboard in order to be able to use it another time
             ; if you use the Windows multiple clipboard
             A_Clipboard := this.EditControl.Value
+
+            ; Wait 1s for Clipboard to be established
+            ClipWait(1)
         }
 
         ; Either clipboard or edit control has content
