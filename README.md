@@ -262,7 +262,7 @@ Delete the folder containing `LLM AutoHotkey Assistant.exe`.
 
 ### Suspend the Assistant
 
-If you want to use the `backtick` character, you can press `CapsLock + Backtick` (or `CapsLock + o`) to suspend and unsuspend the script.
+If you want to use the `backtick` character, you can press `CapsLock + Backtick` (or `Ctrl + Shift + p`) to suspend and unsuspend the script.
 
 It can also be done through the `tray menu > Suspend Assistant`
 
@@ -272,9 +272,9 @@ It can also be done through the `tray menu > Suspend Assistant`
 
 ### Hotkeys Summary
 
-- `Backtick` or `Alt+Shift+o` : Show prompt menu
+- `Alt + Shift + o` or `Backtick`: Show prompt menu
 - `Ctrl + S`: Will automatically save and reload the script when editing in Notepad (or any other editing tool that matches `LLM AutoHotkey Assistant.ahk` title window)
-- `CapsLock + backtick`: Suspend/resume hotkeys
+- `CapsLock + backtick` (or `Ctrl + Shift + p`) : Suspend/resume hotkeys
 - `ESC`: Cancel ongoing requests
 - `CTRL + W`: Close the following windows:
   - Custom prompt
