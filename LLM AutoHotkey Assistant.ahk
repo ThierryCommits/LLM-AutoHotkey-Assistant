@@ -387,7 +387,7 @@ buildHelpMenu(gHelpMenu)
 buildHelpMenu(helpMenu) {
     helpMenu.Add("Open README.pdf", (*) => openHelpPdf())
     helpMenu.Add("Press CTRL+click on a menu item, to invert use of Selection or Chat window", (*) => {})
-    helpMenu.Add("About : " gVersionStringPrefix " " gVersionStringSuffix, (*) => {})
+    helpMenu.Add("About : " gVersionStringPrefix " : " gVersionStringSuffix, (*) => {})
 }
 
 openHelpPdf() {
@@ -1000,10 +1000,10 @@ manageCursorAndToolTip(action) {
 ; ----------------------------------------------------
 
 iAmInTrayBarGui := Gui()
-iAmInTrayBarGui.Title := "LLM AutoHotkey Assistant"
+iAmInTrayBarGui.Title := gVersionStringSuffix
 iAmInTrayBarGui.BackColor := "0xFFDF00"
 ; iAmInTrayBarGui.SetFont("s10", "Cambria")
-iAmInTrayBarGui.Add("Text", "cBlack w320 +Center", "Hello, I'm `"LLM AutoHotkey Assistant`" !`n`nI'll be in the Trayling bar.`n`nShortcut : Alt+Shift+o`n(if not modified in config/Prompt.ahk)")
+iAmInTrayBarGui.Add("Text", "cBlack w370 +Center", "Hello, I'm `"LLM AutoHotkey Assistant`" !`n`nI'll be in the Trayling bar.`n`nShortcut : Alt+Shift+o`n(if not modified in config/Prompt.ahk)")
 iAmInTrayBarGui.Opt("+Owner")
 
 ; Show GUI at the bottom, centered
