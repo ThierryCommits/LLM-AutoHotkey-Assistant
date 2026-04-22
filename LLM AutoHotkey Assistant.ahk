@@ -611,13 +611,13 @@ managePromptWindows(operation, promptName := "", *) {
 ; Initialize Suspend GUI
 ; ----------------------------------------------------
 
-scriptSuspendStatus := Gui()
-scriptSuspendStatus.SetFont("s10", "Cambria")
-scriptSuspendStatus.Add("Text", "cBlack Center", "LLM AutoHotkey Assistant Suspended")
-scriptSuspendStatus.BackColor := "0xFFDF00"
-scriptSuspendStatus.Opt("-Caption +Owner -SysMenu +AlwaysOnTop")
-scriptSuspendStatusWidth := ""
-scriptSuspendStatus.GetPos(, , &scriptSuspendStatusWidth)
+scriptSuspendStatusGui := Gui()
+scriptSuspendStatusGui.SetFont("s10", "Verdana")
+scriptSuspendStatusGui.Add("Text", "cBlack Center", "LLM AutoHotkey Assistant Suspended")
+scriptSuspendStatusGui.BackColor := "0xFFDF00"
+scriptSuspendStatusGui.Opt("-Caption +Owner -SysMenu +AlwaysOnTop")
+scriptSuspendStatusGuiWidth := ""
+scriptSuspendStatusGui.GetPos(, , &scriptSuspendStatusGuiWidth)
 
 ; ----------------------------------------------------
 ; Toggle Suspend
@@ -636,7 +636,7 @@ toggleSuspend(*) {
         A_TrayMenu.Rename("&Suspend Assistant" , "&Resume Assistant")
         
         ; Show GUI at the bottom, centered
-        scriptSuspendStatus.Show("AutoSize x" (A_ScreenWidth - scriptSuspendStatusWidth) / 2.3 " y990 NA")
+        scriptSuspendStatusGui.Show("AutoSize x" (A_ScreenWidth - scriptSuspendStatusGuiWidth) / 2.3 " y990 NA")
         
     } else {
         ; Is NOT suspended
@@ -645,7 +645,7 @@ toggleSuspend(*) {
         A_IconTip := "LLM AutoHotkey Assistant"
         A_TrayMenu.Rename("&Resume Assistant", "&Suspend Assistant")
         
-        scriptSuspendStatus.Hide()
+        scriptSuspendStatusGui.Hide()
     }
 }
 
