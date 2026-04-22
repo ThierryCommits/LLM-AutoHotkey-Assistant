@@ -5,7 +5,7 @@
 !+o:: mainScriptHotkeyActions("showPromptMenu")
 
 #SuspendExempt
-^+p:: mainScriptHotkeyActions("suspendHotkey")
+^+u:: mainScriptHotkeyActions("suspendHotkey")
 
 ; ----------------------------------------------------
 ; OpenRouter API Key
